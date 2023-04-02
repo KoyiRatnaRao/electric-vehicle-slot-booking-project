@@ -1,0 +1,85 @@
+﻿@model IEnumerable<EVProjectDup.Models.Station>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+   #stationbody{
+        background-image: url("https://wallpaperaccess.com/full/1924560.jpg");
+        background-repeat:no-repeat;
+        background-size:cover;
+      
+       
+
+   }
+</style>
+
+<div id="stationbody" class="container-fluid">
+    <div class="row mt-2"> 
+        <div class="col-3">
+            <h1>Index</h1>
+        </div>
+        <div class="col-5">
+            
+                
+           
+        </div>
+        <div class="col-4">
+            <form asp-controller="Stations" asp-action="Index">
+                   <div class="row">
+                          <div class="col">
+                        <input type="text" class="input-group-text" name="SearchString" />
+                          </div>
+                    <div class="col">
+                        <input type="submit" class="btn btn-primary" value="Search" />
+                    </div>
+                   </div>
+                  
+                   
+                
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+@foreach (var item in Model) {
+       
+           
+      
+    <div class="row">
+        <div class="col-6">
+     <div class="container bcontent">
+        <div class="card" style="width: 500px;">
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                    <img class="card-img" src="@item.imagurl" alt="Suresh Dasari Card">
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body">
+                        <div class="row">
+                                <div class="col"><h5 class="card-title">@item.CSName</h5></div>
+                                <div class="col" onclick="btn btn-primary">@item.NoOfPorts</div>
+                        </div>
+                        
+                        <p class="card-text">@item.CSPhoneNumber</p>
+                        <p>@item.Adress</p>
+                        <a class="btn bg-black" href="@item.AdressLink">Maps</a>
+                         <a class="btn btn-primary" asp-action="Details" asp-route-id="@item.CSId">View Station</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>'
+    </div>'
+  </div>
+    //    <div>
+
+//                    <a asp-action="Edit" asp-route-id="@item.CSId">Edit</a> |
+  //                  <a asp-action="Details" asp-route-id="@item.CSId">Details</a> |
+    //                <a asp-action="Delete" asp-route-id="@item.CSId">Delete</a>
+    //</div>
+}
+</div>

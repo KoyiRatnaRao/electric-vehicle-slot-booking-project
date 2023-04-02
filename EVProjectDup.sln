@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33403.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVProjectDup", "EVProjectDup\EVProjectDup.csproj", "{47F6C34B-6AB2-406F-9A45-7953D9D0B1DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EVP.Utility", "EVP.Utility\EVP.Utility.csproj", "{23A489CE-E03B-496A-8A9D-6E8EE3145DD9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47F6C34B-6AB2-406F-9A45-7953D9D0B1DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47F6C34B-6AB2-406F-9A45-7953D9D0B1DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47F6C34B-6AB2-406F-9A45-7953D9D0B1DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47F6C34B-6AB2-406F-9A45-7953D9D0B1DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23A489CE-E03B-496A-8A9D-6E8EE3145DD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23A489CE-E03B-496A-8A9D-6E8EE3145DD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23A489CE-E03B-496A-8A9D-6E8EE3145DD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23A489CE-E03B-496A-8A9D-6E8EE3145DD9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EF1CAD88-B550-471E-9CCF-0AB7358A2A7B}
+	EndGlobalSection
+EndGlobal

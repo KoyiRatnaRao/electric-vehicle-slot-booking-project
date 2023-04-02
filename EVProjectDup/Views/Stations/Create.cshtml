@@ -1,0 +1,141 @@
+﻿@model EVProjectDup.Models.Station
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<h4>Create Station</h4>
+<hr />
+<div class="row">
+    <div class="col">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+         <div class="row">
+                <div class="col-sm-8 co-12">
+                    <div class="form-group">
+                        <label asp-for="CSEmail" class="control-label"></label>
+                        <input asp-for="CSEmail" class="form-control" />
+                        <span asp-validation-for="CSEmail" class="text-danger"></span>
+                    </div>
+             </div>
+                <div class="col-sm-4 col-12">
+                    <div class="form-group">
+                        <label asp-for="CSPhoneNumber" class="control-label"></label>
+                        <input asp-for="CSPhoneNumber" class="form-control" />
+                        <span asp-validation-for="CSPhoneNumber" class="text-danger"></span>
+                    </div>
+             </div>
+         </div>
+
+
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="form-group">
+                        <label asp-for="CSName" class="control-label"></label>
+                        <input asp-for="CSName" class="form-control" />
+                        <span asp-validation-for="CSName" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-8 col-12">
+                    <div class="form-group">
+                        <label asp-for="CSDescription" class="control-label"></label>
+                        <input asp-for="CSDescription" class="form-control" />
+                        <span asp-validation-for="CSDescription" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-5 col-12">
+                    <div class="form-group">
+                        <label asp-for="City" class="control-label"></label>
+                        <input asp-for="City" class="form-control" />
+                        <span asp-validation-for="City" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-12">
+                    <div class="form-group">
+                        <label asp-for="PinCode" class="control-label"></label>
+                        <input asp-for="PinCode" class="form-control" />
+                        <span asp-validation-for="PinCode" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-12">
+                    <div class="form-group">
+                        <label asp-for="NoOfPorts" class="control-label"></label>
+                        <input asp-for="NoOfPorts" class="form-control" />
+                        <span asp-validation-for="NoOfPorts" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="form-group">
+                        <label asp-for="imagurl" class="control-label"></label>
+                        <input asp-for="imagurl" class="form-control" />
+                        <span asp-validation-for="imagurl" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-12">
+
+                      <div class="form-group">
+                <label asp-for="AdressLink" class="control-label"></label>
+                <input asp-for="AdressLink" class="form-control" />
+                <span asp-validation-for="AdressLink" class="text-danger"></span>
+            </div>
+                </div>
+                <div class="col-sm-2 col-12">
+                    <div class="form-group">
+                        <select asp-for="status" class="form-select" multiple aria-label="multiple select example">
+                            <option selected>Active</option>
+                            <option value="1">Closed</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-12">
+                    <div class="form-group">
+                        <label asp-for="Price" class="control-label"></label>
+                        <input asp-for="Price" class="form-control" />
+                        <span asp-validation-for="Price" class="text-danger"></span>
+                    </div>
+                </div>
+            </div>
+           
+
+            <div class="row">
+                <div class="col col-sm-12">
+
+                    <div class="form-group">
+                        <label asp-for="Adress" class="control-label"></label>
+                        <input asp-for="Adress" class="form-control" />
+                        <span asp-validation-for="Adress" class="text-danger"></span>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 col-12">
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-primary" width="100%" />
+                    </div>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
